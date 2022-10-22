@@ -1,5 +1,5 @@
 const Intern = require("../lib/Intern");
-const intern = new Employee(
+const intern = new Intern(
   "Clarisse",
   "77732",
   "clarisse@gmail.com",
