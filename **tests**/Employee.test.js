@@ -1,4 +1,4 @@
-const { default: test } = require("node:test");
+// const { default: test } = require("node:test");
 const Employee = require("../lib/Employee");
 // set AND get id
 // set AND get email
@@ -16,25 +16,35 @@ test("Create an employee instance", () => {
 
 // Testing getName method.
 test("test to get the name from the getName() method", () => {
-  const val = "name";
-  const e = new Employee(val);
-  expect(e.getName()).toBe(val);
+  const name = "name";
+  const id = "id";
+  const email = "email";
+  const e = new Employee(name, id, email);
+  expect(e.getName()).toBe(name);
 });
 
 // Testing getId method.
 test("test to get the id from the getId() method", () => {
-  const val = "Id";
-  const e = new Employee(val);
-  expect(e.getId()).toBe(val);
+  const name = "name";
+  const id = "id";
+  const email = "email";
+  const e = new Employee(name, id, email);
+  expect(e.getId()).toBe(id);
 });
 
 // Testing getEmail method.
 test("test to get the email from getEmail() method", () => {
-  const val = "Email";
-  const e = new Employee(val);
-  expect(e.getEmail()).toBe(val);
+  const name = "name";
+  const id = "id";
+  const email = "email";
+  const e = new Employee(name, id, email);
+  expect(e.getEmail()).toBe(email);
 });
 
 test("test to get the role from the getRole() method", () => {
-  expert(employee.getRole()).toBe("Employee");
+  const name = "name";
+  const id = "id";
+  const email = "email";
+  const e = new Employee(name, id, email);
+  expect(e.getRole()).toBe("Employee");
 });

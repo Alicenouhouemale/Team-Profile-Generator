@@ -71,6 +71,24 @@ function createManager() {
       },
     ])
     .then((answersObj) => {
-      const manager = new Manager(answersObj.name, answers.id);
-    });
+      const manager = new Manager(
+        answersObj.name,
+        answers.id,
+        answers.email,
+        answers.officeNumber
+      );
+    });    
+}
+
+const promptMenu = () => {
+  return inquirer.prompt({
+    input: "list",
+    name: "menu",
+    message: "Please choose the option which you would like to continue with:",
+    choices: ["add an engineer", "add an intern", "add a manager", "finish building my team"]
+  })
+
+  .then(userChoice.menu) {
+    
+  }
 }

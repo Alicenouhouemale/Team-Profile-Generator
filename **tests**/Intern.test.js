@@ -1,4 +1,4 @@
-const { default: test } = require("node.test");
+// const { default: test } = require("node.test");
 const { TestScheduler } = require("rxjs/testing");
 const Intern = require("../lib/Intern");
 // const intern = new Intern(

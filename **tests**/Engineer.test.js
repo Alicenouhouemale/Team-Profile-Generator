@@ -1,5 +1,5 @@
-const { default: test } = require("node:test");
-const Engineer = require("../lib/Employee");
+// const { default: test } = require("node:test");
+const Engineer = require("../lib/Engineer");
 // const engineer = new Engineer("Sena", "98115", "sena@gmail.com", "sena3045");
 
 test("Can set github account", () => {
@@ -16,7 +16,7 @@ test(`getRole returns 'Engineer'`, () => {
 
 // test to get github account via getGithub()
 test("getGithub() returns github name", () => {
-  const val = "gitHub";
+  const val = "github";
   const e = new Engineer("name", 1, "email@email.com", "github");
   expect(e.getGithub()).toBe(val);
 });

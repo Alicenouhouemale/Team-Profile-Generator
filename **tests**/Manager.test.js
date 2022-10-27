@@ -1,4 +1,4 @@
-const { default: test } = require("node.test");
+// const { default: test } = require("node.test");
 const Manager = require("../lib/Manager");
 // const manager = new Manager("Jordy", "22544", "jordy@gmail.com", "12");
 
