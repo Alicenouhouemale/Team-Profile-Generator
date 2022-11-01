@@ -77,7 +77,7 @@ function createManager() {
         answers.email,
         answers.officeNumber
       );
-    });    
+    });
 }
 
 const promptMenu = () => {
@@ -85,10 +85,11 @@ const promptMenu = () => {
     input: "list",
     name: "menu",
     message: "Please choose the option which you would like to continue with:",
-    choices: ["add an engineer", "add an intern", "add a manager", "finish building my team"]
-  })
-
-  .then(userChoice.menu) {
-    
-  }
-}
+    choices: [
+      "add an engineer",
+      "add an intern",
+      "add a manager",
+      "finish building my team",
+    ],
+  });
+};
